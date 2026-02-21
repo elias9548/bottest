@@ -6,4 +6,5 @@ async def send_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = ApplicationBuilder().token("8587741574:AAGxlCojTnZ4B8Vq9IiFE5AfwU8L2lvgMiU").build()
 app.add_handler(MessageHandler(filters.ALL, send_id))
+print("done")
 app.run_polling()
